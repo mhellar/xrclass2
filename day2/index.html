@@ -121,9 +121,7 @@
             </section>
 
             <section>
-<<<<<<< HEAD
                 Take a look at 2.html
-=======
                 Take a look at 3.html
             </section>
 
@@ -149,7 +147,6 @@
             
                     </code></pre>
 
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
             </section>
 
             <section>
@@ -264,31 +261,6 @@
                     </code></pre>
 
             </section>
-<<<<<<< HEAD
-=======
-            <section>
-                <pre><code data-trim >
-<!-- doesnt do much by itelf -->
-<a-entity></a-entity>
-
-<!-- here we are attaching a-frames geometry and material components which give us new attibutes -->
-<!-- components give new features to a blank entity -->
-<a-entity geometry="primitive: box" material="color: red">
-</a-entity>
-
-<!-- Loading an obj model uses the obj-model component attached to an entity -->
-<a-entity obj-model="obj: #si-obj; mtl: #si-mtl" position="-5 18 25">
-</a-entity>
-</code></pre>
-            </section>
-            <section>
-                <p>Homework read:
-                    <a href="https://aframe.io/docs/0.9.0/introduction/entity-component-system.html">entity-component
-                        system</a>
-                </p>
-            </section>
-
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
             <section>
                 <ul>
                     <li>In 7.html we are adding some machinations for user Interactions with laser controls and a gaze cursor</li>
@@ -361,7 +333,6 @@ _target: #bg; color: #E91E63" sound="src: assets/sound/sound27.mp3; on: mouseent
             </section>
             <section>
                 <ul>
-<<<<<<< HEAD
                         <li>There are a couple ways to move around in a scene</li>
                         <li class="fragment">Let's take a look at some of the methods</li>
                         </li>
@@ -391,38 +362,15 @@ _target: #bg; color: #E91E63" sound="src: assets/sound/sound27.mp3; on: mouseent
                         </ul>  
             </section>
 
-=======
-                    <li>a-entity tag</li>
-                    <li class="fragment">So far we've mainly been working with the built in aframe primitive like a-box,
-                        a-sphere etc..</li>
-                    <li class="fragment">Theres another way to add elements to the scene with a-entity</li>
-                    <li class="fragment">By itself, a-entity has no appearance, behavior, or functionality.</li>
-                    <li class="fragment">To extend a-entity you attach a component to it which gives it new atrributes
-                    </li>
-                    <li class="fragment">There are many avialable components which are built into aframe and externally
-                    </li>
-                    <li class="fragment">Lets look at the built in a-frame ones
-                        https://aframe.io/docs/0.9.0/components/background.html</li>
-                    <li class="fragment">Components are written in Javascript</li>
-                </ul>
-            </section>
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
             <section>
                 Components of A-Frame’s entity-component framework are JavaScript modules that can be mixed, matched,
                 and composed onto entities
                 to build appearance, behavior, and functionality. We can register component in JavaScript and and add it
                 to an a-entity tag. Components are configurable, reusable, and shareable. Most code in an A-Frame
-<<<<<<< HEAD
                 application should live within components.
             </section>
             
  
-=======
-                application
-                should live within components.
-            </section>
-
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
             <section>
                 You use the AFRAME.registerComponent() function to register a component, do this before
                 <a-scene></a-scene> Have a look at comp.html
@@ -430,45 +378,30 @@ _target: #bg; color: #E91E63" sound="src: assets/sound/sound27.mp3; on: mouseent
 
             <section>
                 You can also define an AFRAME.registerComponent() in a seperate file
-<<<<<<< HEAD
                 <a-scene></a-scene> Have a look at the content of the template folder
-=======
-                <a-scene></a-scene> Have a look at the contecnt of the template folder
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
             </section>
 
             <section>
                 <ul>
                     <li>Default functions of a component</li>
                     <li>Inside the template folder, look at the file mycomponent.js</li>
-<<<<<<< HEAD
                     <li>This is a boilerplate that show all the built in functions that a-frame gives us</li>
-=======
-                    <li>This is a boilerplate that show all the built in fucntions that a-frame gives us</li>
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
                     <li>We will mainly use the init() which is called once when the component is first plugged into its
                         entity.</li>
                 </ul>
             </section>
             <section>
-<<<<<<< HEAD
                     <li><a href="https://aframe.io/docs/0.9.0/introduction/writing-a-component.html">writing a component reference</a>
                     </li>
                     
             </section>
             <section>
-=======
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
                 We’ll go over examples on writing components. The examples will do mostly trivial things at first but
                 will will build up
                 in compleity as we go.
             </section>
             <section>
-<<<<<<< HEAD
                 Let's look at the code in 15.html
-=======
-                Let's look at the code in lesson1
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
             </section>
             <section>
                 After the entity is attached and initialized, it will initialize our hello-world component. The
@@ -480,24 +413,9 @@ _target: #bg; color: #E91E63" sound="src: assets/sound/sound27.mp3; on: mouseent
                     <li>Defining Properties with the Schema</li>
                     <li>The schema defines the properties of its component. As an analogy, if we think of a component as
                         a function, then a component’s properties are like its function arguments.</li>
-<<<<<<< HEAD
                     <li>Have a look at 16.html and try uncommenting line 33</li>
                 </ul>
             </section>
-=======
-                    <li>Have a look at lesson2 and try uncommenting line 33</li>
-                </ul>
-            </section>
-            <section>
-                <ul>
-                    <li>Defining Properties with the Schema</li>
-                    <li>The schema defines the properties of its component. As an analogy, if we think of a component as
-                        a function, then a component’s properties are like its function arguments.</li>
-                    <li>Have a look at lesson2 and try uncommenting line 33</li>
-                </ul>
-            </section>
-
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
             <section>
                 <ul>
                     <li>Lets look at the Component API reference to see the schema type available</li>
@@ -508,11 +426,7 @@ _target: #bg; color: #E91E63" sound="src: assets/sound/sound27.mp3; on: mouseent
 
             <section>
                 <ul>
-<<<<<<< HEAD
                     <li>Have a look at 16.html</li>
-=======
-                    <li>Have a look at lesson3</li>
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
                     <li>This shows mutltiple schema properties and how to call them</li>
                 </ul>
             </section>
@@ -521,33 +435,20 @@ _target: #bg; color: #E91E63" sound="src: assets/sound/sound27.mp3; on: mouseent
                 <ul>
                     <li>Add an element to the scene using document.createElement(),setAttribute() and .appendChild()
                     </li>
-<<<<<<< HEAD
                     <li>Have a look at 17.html</li>
-=======
-                    <li>Have a look at lesson4</li>
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
                 </ul>
             </section>
 
             <section>
                 <ul>
-<<<<<<< HEAD
                     <li>In 18.html we combine the last lesson with multiple schema propeties and entities</li>
-=======
-                    <li>In lesson5 we combine the last lesson with multiple schema propeties and entities</li>
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
                     <li>Let's take a look</li>
                 </ul>
             </section>
 
             <section>
                 <ul>
-<<<<<<< HEAD
                     <li>Let's take a look at Lesson 19.html, in this example we append the animation atrribute</li>
-=======
-                    <li>We can combine elements with appendChild()</li>
-                    <li>Let's take a look at Lesson 6</li>
->>>>>>> e32e0a8f04224d882732bfbf2d0a7815d58e1d3c
                 </ul>
             </section>
 
