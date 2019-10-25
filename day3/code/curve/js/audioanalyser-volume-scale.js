@@ -19,10 +19,11 @@ AFRAME.registerComponent('audioanalyser-volume-scale', {
       y: volume,
       z: volume
     });
-    el.setAttribute('rotation', {
-      x: volume,
-      y: volume,
-      z: volume
+    el.setAttribute('material', {opacity: volume
     });
+    el.setAttribute('material', {metalness: volume
+    });
+    console.log(volume);
+
   }
 });

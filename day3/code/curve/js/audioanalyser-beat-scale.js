@@ -13,11 +13,6 @@ FRAME.registerComponent('audioanalyser-beat-scale', {
         y: volume,
         z: volume
       });
-      el.setAttribute('rotation', {
-        x: volume,
-        y: volume,
-        z: volume
-      });
     });
   }
 });
