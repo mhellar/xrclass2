@@ -1,0 +1,434 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2080,
+      "max": [
+        -0.75465458631515503,
+        1.0273809432983398,
+        0.34954002499580383
+      ],
+      "min": [
+        -0.91097277402877808,
+        0.8678855299949646,
+        0.18380528688430786
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 24960,
+      "componentType": 5126,
+      "count": 2080,
+      "max": [
+        0.99831169843673706,
+        0.99824309349060059,
+        0.99986815452575684
+      ],
+      "min": [
+        -0.99831157922744751,
+        -0.99824321269989014,
+        -0.99963933229446411
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2080,
+      "max": [
+        0.99974137544631958,
+        0.99873393774032593,
+        0.22453553974628448,
+        1
+      ],
+      "min": [
+        -0.99989610910415649,
+        -0.99722379446029663,
+        -0.22294138371944427,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 12000,
+      "max": [
+        2079
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 49920,
+      "componentType": 5126,
+      "count": 2682,
+      "max": [
+        -0.75549030303955078,
+        1.0265266895294189,
+        0.33312547206878662
+      ],
+      "min": [
+        -0.91013813018798828,
+        0.86873561143875122,
+        0.18463674187660217
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 82104,
+      "componentType": 5126,
+      "count": 2682,
+      "max": [
+        0.99831175804138184,
+        0.99824362993240356,
+        0.99993079900741577
+      ],
+      "min": [
+        -0.99831175804138184,
+        -0.99824339151382446,
+        -0.99963957071304321
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 33280,
+      "componentType": 5126,
+      "count": 2682,
+      "max": [
+        0.97507941722869873,
+        0.98874545097351074,
+        0.99742120504379272,
+        1
+      ],
+      "min": [
+        -0.99952173233032227,
+        -0.97353976964950562,
+        -0.99947643280029297,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2682,
+      "max": [
+        0.96630406379699707,
+        1.9772672653198242
+      ],
+      "min": [
+        0.037543624639511108,
+        1.0224649906158447
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 48000,
+      "componentType": 5125,
+      "count": 15840,
+      "max": [
+        2681
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Alexander Antipov (https://sketchfab.com/Dessen)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/417cbd1aac554ea189966250b784ab6f",
+      "title": "Realistic Human Eye"
+    },
+    "generator": "Sketchfab-3.19.4",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 111360,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 21456,
+      "byteOffset": 111360,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 114288,
+      "byteOffset": 132816,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 76192,
+      "byteOffset": 247104,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 323296,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "images": [
+    {
+      "uri": "textures/Eyes_diffuse.jpg"
+    },
+    {
+      "uri": "textures/Eyes_normal.png"
+    },
+    {
+      "uri": "textures/Eyes_specularGlossiness.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0,
+            0,
+            0,
+            0.44340701220000001
+          ],
+          "glossinessFactor": 1,
+          "specularFactor": [
+            0.038300304899999998,
+            0.038300304899999998,
+            0.038300304899999998
+          ]
+        }
+      },
+      "name": "aiStandard3"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 0,
+            "texCoord": 0
+          },
+          "glossinessFactor": 1,
+          "specularFactor": [
+            0.19073932930000001,
+            0.19073932930000001,
+            0.19073932930000001
+          ],
+          "specularGlossinessTexture": {
+            "index": 2,
+            "texCoord": 0
+          }
+        }
+      },
+      "name": "Eyes",
+      "normalTexture": {
+        "index": 1,
+        "scale": 1,
+        "texCoord": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Eye_1_R_aiStandard3_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Eye_2_R_Eyes_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TANGENT": 6,
+            "TEXCOORD_0": 7
+          },
+          "indices": 8,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "e83835d76aa64622886094c972479604.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5,
+        7
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0.99567178376193999,
+        0.092939222184805659,
+        0,
+        0,
+        -0.092939222184805659,
+        0.99567178376193999,
+        0,
+        0,
+        0.028830748051404953,
+        -0.086920648813247681,
+        1
+      ],
+      "name": "Eye_R"
+    },
+    {
+      "children": [
+        6
+      ],
+      "name": "Eye_1_R"
+    },
+    {
+      "mesh": 0,
+      "name": "Eye_1_R_aiStandard3_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "name": "Eye_2_R"
+    },
+    {
+      "mesh": 1,
+      "name": "Eye_2_R_Eyes_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}
+
