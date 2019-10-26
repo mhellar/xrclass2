@@ -112,6 +112,93 @@
             </section>
 
             <section>
+                <ul>
+                    <li>Lights</li>
+                    <li class="fragment">Look at scene l1.html</li>
+                    <li class="fragment">As the cube rotates the light reflects off of it</li>
+                    <li class="fragment">You need a light or else you wouldn't see anything</li>
+                    <li class="fragment">If we look at the code the is no a-light</li>
+                    <li class="fragment">A-frame add a default light for us</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Lights</li>
+                    <li class="fragment">Look at scene l2.html</li>
+                    <li class="fragment">We added a directional light which streams photons from the upper right</li>
+                    <li class="fragment">Uncomment line 12 and you will have light from both directions</li>
+                    <li class="fragment">Comment line 12 and uncomment line 13</li>
+                    <pre><code data-trim class="fragment">
+<a-light type="directional" position="-1 1 1" color="white"></a-light>
+                </code></pre>
+
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Anbient Lights</li>
+                    <li class="fragment">Look at scene l2.html</li>
+                    <li class="fragment">Comment lines 12 and line 13</li>
+                    <li class="fragment">Uncomment line 14 to add an ambient light</li>
+                    <li class="fragment">Ambient lights affect all places in the scene, regardless of what direction
+                        they are facing.</li>
+                    <li class="fragment">Make suer to not make your ambient lights to intense or it will overide your
+                        directional light</li>
+                    <pre><code data-trim class="fragment">
+<a-light type="ambient" color="white" intensity="0.5"></a-light>
+                    </code></pre>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Point Light and Emissive Materials</li>
+                    <li class="fragment">Look at scene l3.html</li>
+                    <li class="fragment">On line 12 we have created a sphere which has an emmisive attribute</li>
+                    <li class="fragment">An emmisive color allows an object to cast it's own light</li>
+                    <li class="fragment">The emissive color makes the moon visible, but it doesn't produce light that
+                        shines on the rest of the
+                        scene.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Point Light and Emissive Materials</li>
+                    <li class="fragment">Look at scene l3.html</li>
+                    <li class="fragment">On line 13 we attach a point light to the sphere</li>
+                    <li class="fragment">Point lights are similar to directional lights except that the intensity
+                        decreases as objects get further
+                        away from the light.</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Shadows</li>
+                    <li class="fragment">Look at scene l4.html</li>
+                    <li class="fragment">Shadows are very expensive to compute so they are turned off by default.</li>
+                    <li class="fragment">To work with shadows we need to think of three things:</li>
+                    <li class="fragment">Which light will be used to create the shadow (the moon light)</li>
+                    <li class="fragment">Which object will cast a shadow (the cube)</li>
+                    <li class="fragment">which object will receive a shadow (the plane)</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Shadows</li>
+                    <li class="fragment">Look at scene l4.html</li>
+                    <li class="fragment">To turn on shadows we need to add castShadow:true; to the light, line 14</li>
+                    <li class="fragment">The we add shadow="cast: true" to the cube, line 20</li>
+                    <li class="fragment">And we add shadow="receive: true" to the plane, line 19</li>
+                </ul>
+            </section>
+
+            <section>
                 Components of A-Frame’s entity-component framework are JavaScript modules that can be mixed, matched,
                 and composed onto entities
                 to build appearance, behavior, and functionality. We can register component in JavaScript and and add it
@@ -197,7 +284,13 @@
 
             <section>
                 <ul>
-                    <li>Let's take a look at Lesson 6.html, in this example we append the animation atrribute</li>
+                    <li>Let's take a look at Lesson 7.html, in this example we append the animation atrribute</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Let's take a look at Lesson 8.html, in this example we demonstrate using an obj model</li>
                 </ul>
             </section>
 
@@ -222,16 +315,37 @@
             <section>
                 <ul>
                     <li>Its' very easy to do AR with Aframe and AR.JS</li>
-                    <li><a href="https://github.com/jeromeetienne/AR.js">AR.JS</a></li>
-                    <li>Lets look at the examples in the ARJS folder</li>
+                    <li><a href="https://aframe.io/blog/arjs/">A-Frame AR.JS Docs</a></li>
+                    <li>Lets take a quick run through the docs</li>
                 </ul>
             </section>
 
             <section>
                 <ul>
+                    <li>Its' very easy to do AR with Aframe and AR.JS</li>
+                    <li><a href="https://github.com/jeromeetienne/AR.js">AR.JS</a></li>
+                    <li>Lets look at the examples in the ARJS folder</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><a
+                            href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html">Custom
+                            Marker Generator</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul>
                     <li>Jeeliz Face Filter does face tracking AR</li>
                     <li><a href="https://github.com/jeeliz/jeelizFaceFilter">Jeeliz face filter</a></li>
                     <li>Lets look at the examples in the Jeeliz folder</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Take some time to build out some AR and VR scenes them post in slack</li>
+                    <li>WE can shoot some depth kit foatage if you would like</a></li>
                 </ul>
             </section>
 
