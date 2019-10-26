@@ -48,13 +48,66 @@
                 data-background-size="80px" data-background-transition="zoom">
                 <ul>
                     <h3>Topics for Today:</h3>
+                    <li class="fragment">Impotrint models from the Google Poly API</li>
                     <li class="fragment">Writing components</li>
                     <li class="fragment">Audio Visualization</li>
                     <li class="fragment">Adding Shaders from Shaderfrog</li>
                     <li class="fragment">Depthkit</li>
                     <li class="fragment">Creating AR with AR.js and Aframe</li>
                     <li class="fragment">Creating AR with Jeeliz and Aframe</li>
-                    
+
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>There is a command line executable for generating boilerplate A-frame scenes and components</li>
+                    <li><a href="https://github.com/ngokevin/angle">Angle</a></li>
+                    <li>Install: npm install angle</li>
+                    <li>Usage: angle initscene</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>There was a question about importing models via the Google Poly API</li>
+                    <li>I tried it out and it worled pretty good</li>
+                    <li>Have a look at poly and poly2</li>
+                    <li>Teleport controls are also working in these scenes</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>To get models via the API you need a key</li>
+                    <li><a href="https://developers.google.com/poly/develop/api">Get one here</a></li>
+                    <li><a href="https://github.com/archilogic-com/aframe-gblock">Get the component here</a></li>
+                    <li>Add an attribute to your entity i.e.
+                        gblock="https://poly.google.com/view/ewsXLyr8OPu?key=YOUR_POLY_API_KEY_HERE"</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Clone one of the poly scenes and build out a new scene with Assets</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>I got one of my old networked Aframe scenes working</li>
+                    <li>Lets' try it out. I'll run it and we can all jump in</a></li>
+                    <li>I'll give you an IP address to go to</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>To run that server</li>
+                    <li>cd into networked</a></li>
+                    <li>npm install</a></li>
+                    <li>sudo npm start (it runs on port 80, hence sudo)</a></li>
+                    <li><a href="https://github.com/networked-aframe/networked-aframe">Networked Aframe</a></a></li>
                 </ul>
             </section>
 
@@ -65,11 +118,11 @@
                 to an a-entity tag. Components are configurable, reusable, and shareable. Most code in an A-Frame
                 application should live within components.
             </section>
-            
- 
+
+
             <section>
                 You use the AFRAME.registerComponent() function to register a component, do this before
-                <a-scene></a-scene> Have a look at comp.html
+                <a-scene></a-scene> Have a look at 1.html
             </section>
 
             <section>
@@ -87,29 +140,28 @@
                 </ul>
             </section>
             <section>
-                    <li><a href="https://aframe.io/docs/0.9.0/introduction/writing-a-component.html">writing a component reference</a>
-                    </li>
-                    
+                <li><a href="https://aframe.io/docs/0.9.0/introduction/writing-a-component.html">writing a component
+                        reference</a>
+                </li>
+
             </section>
             <section>
                 We’ll go over examples on writing components. The examples will do mostly trivial things at first but
-                will will build up
-                in compleity as we go.
+                will build up in complexity as we go.
             </section>
             <section>
-                Let's look at the code in 1.html
+                Let's look at the code in 2.html
             </section>
             <section>
                 After the entity is attached and initialized, it will initialize our hello-world component. The
-                wonderful thing about components
-                is that they are called only after the entity is ready.
+                wonderful thing about components is that they are called only after the entity is ready.
             </section>
             <section>
                 <ul>
                     <li>Defining Properties with the Schema</li>
                     <li>The schema defines the properties of its component. As an analogy, if we think of a component as
                         a function, then a component’s properties are like its function arguments.</li>
-                    <li>Have a look at 2.html and try uncommenting line 33</li>
+                    <li>Have a look at 3.html and try uncommenting line 28</li>
                 </ul>
             </section>
             <section>
@@ -122,7 +174,7 @@
 
             <section>
                 <ul>
-                    <li>Have a look at 3.html</li>
+                    <li>Have a look at 4.html</li>
                     <li>This shows mutltiple schema properties and how to call them</li>
                 </ul>
             </section>
@@ -131,14 +183,15 @@
                 <ul>
                     <li>Add an element to the scene using document.createElement(),setAttribute() and .appendChild()
                     </li>
-                    <li>Have a look at 4.html</li>
+                    <li>Have a look at 5.html</li>
                 </ul>
             </section>
 
             <section>
                 <ul>
-                    <li>In 5.html we combine the last lesson with multiple schema propeties and entities</li>
+                    <li>In 6.html we combine the last lesson with multiple schema propeties and entities</li>
                     <li>Let's take a look</li>
+                    <li>Also note the custom functions</li>
                 </ul>
             </section>
 
@@ -149,24 +202,25 @@
             </section>
 
             <section>
-                    <ul>
-                            <li>Using the audio anylyzer component</li>
-                            <li><a href="https://github.com/supermedium/superframe/tree/master/components/audioanalyser/"></a></li>
-                            <li>Have a look at curve and curve2</li>
-                        </ul>
-                    
+                <ul>
+                    <li>Using the audio anylyzer component</li>
+                    <li><a href="https://github.com/supermedium/superframe/tree/master/components/audioanalyser/"></a>
+                    </li>
+                    <li>Have a look at curve and curve2</li>
+                </ul>
+
             </section>
 
             <section>
-                    <ul>
-                            <li>Adding a shader from Shaderfrog</li>
-                            <li><a href="https://github.com/msj121/aframeFrogShaders"></a></li>
-                            <li>Have a look at shader</li>
-                        </ul>
-                    
+                <ul>
+                    <li>Adding a shader from Shaderfrog</li>
+                    <li><a href="https://github.com/msj121/aframeFrogShaders"></a></li>
+                    <li>Have a look at shader</li>
+                </ul>
+
             </section>
 
-            
+
         </div>
     </div>
     </div>

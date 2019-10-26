@@ -5,12 +5,29 @@
     <script>
         // register your component here with a name
         AFRAME.registerComponent('hello-world', {
+            schema: {
+                message: {
+                    type: 'string',
+                    default: 'Hello, World!'
+                },
+                amount: {
+                    type: 'number',
+                    default: 1
+                },
+                color: {
+                    type: 'color',
+                    default: 'red'
+                },
+            },
             init: function () {
-                var box = document.createElement('a-box');
-                box.setAttribute('color', 'green');
-                box.setAttribute('position', '0 2 -5');
-                box.setAttribute('scale', '1 1 1');
-                this.el.appendChild(box);
+                for (var i = 0; i < this.data.amount; i++) {
+                    var box = document.createElement('a-text');
+                    box.setAttribute('color', this.data.color);
+                    box.setAttribute('position', '0 ' + i * 0.25 + ' -2');
+                    box.setAttribute('scale', '1 1 1');
+                    box.setAttribute('value', this.data.message);
+                    this.el.appendChild(box);
+                }
             }
         });
     </script>
@@ -19,7 +36,12 @@
 <body>
     <a-scene>
         <!-- Attach components to an entity tag by adding the name -->
-        <a-entity hello-world>
+        <a-entity hello-world="message: 'hi there'; amount: 10; color: orange" position="-1 2 0"></a-entity>
+
+        <a-entity hello-world="message: 'what's up; amount: 50; color: grey" position="0 2 0"></a-entity>
+        </a-entity>
+
+        <a-entity hello-world="message: 'great news'; amount: 1000; color: teal" position="1 2 0"></a-entity>
         </a-entity>
         <!-- uncomment to pass an argument -->
         <!-- <a-entity hello-world=" message: cool news! " position="0 2 -4 "> -->
